@@ -59,108 +59,122 @@
       </div>
 
       <aside class="filter">
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+  <!--Можно ли складывать в форму помимо label и input дивы, заголовки и прочее, как здесь? Валидатор не ругался.-->
+          <div class="filter-manufacturer">
+            <h2>Производители</h2>
+            <input id="Baxter" type="checkbox" checked>
+            <label for="Baxter">Baxter of California</label>
 
-        <div class="filter-manufacturer">
-          <h2>Производители</h2>
-          <input id="Baxter" type="checkbox" checked>
-          <label for="Baxter">Baxter of California</label>
+            <input id="mrnatty" type="checkbox">
+            <label for="mrnatty">Mr Natty</label>
 
-          <input id="mrnatty" type="checkbox">
-          <label for="mrnatty">Mr Natty</label>
+            <input id="suavecito" type="checkbox" checked>
+            <label for="suavecito">Suavecito</label>
 
-          <input id="suavecito" type="checkbox" checked>
-          <label for="suavecito">Suavecito</label>
+            <input id="malingoetz" type="checkbox">
+            <label for="malingoetz">Malin+Goetz</label>
 
-          <input id="malingoetz" type="checkbox">
-          <label for="malingoetz">Malin+Goetz</label>
+            <input id="murrays" type="checkbox">
+            <label for="murrays">Murray's</label>
 
-          <input id="murrays" type="checkbox">
-          <label for="murrays">Murray's</label>
+            <input id="amcrew" type="checkbox" checked>
+            <label for="amcrew">American Crew</label>
+          </div>
 
-          <input id="amcrew" type="checkbox" checked>
-          <label for="amcrew">American Crew</label>
-        </div>
+          <div class="filter-product">
+            <h2>Группы товаров</h2>
 
-        <div class="filter-product">
-          <h2>Группы товаров</h2>
+            <label>
+              <input type="radio" name="product-group" value="shaving">
+              Бритвенные принадлежности
+            </label> 
 
-          <label>
-            <input type="radio" name="product-group" value="shaving">
-            Бритвенные принадлежности
-          </label> 
+            <label>
+              <input type="radio" name="product-group" value="care" checked>
+              Средства для ухода
+            </label> 
 
-          <label>
-            <input type="radio" name="product-group" value="care" checked>
-            Средства для ухода
-          </label> 
-
-          <label>
-            <input type="radio" name="product-group" value="accessories">
-            Аксессуары
-          </label> 
-        </div>
-        <button class="button-show" type="button">Показать</button>
+            <label>
+              <input type="radio" name="product-group" value="accessories">
+              Аксессуары
+            </label> 
+          </div>
+          <button class="button-show" type="button">Показать</button> <!--Оставить кнопку или поменять на <input type="submit">?-->
+        </form>
       </aside>
 
       <section class="products">
 
         <div class="products-catalog">
           <article class="products-item">
-            <img src="http://placehold.it/150x100" alt="Baxter travel kit" width="150" height="100">
-            <p>
-            Набор для путешествий<br>
-            «Baxter of California»
-            </p>
+            <a href="#">
+              <img src="http://placehold.it/150x100" alt="Baxter travel kit" width="150" height="100">
+              <p>
+              Набор для путешествий<br>
+              «Baxter of California»
+              </p>
+            </a>
             <div class="product-price">2 900 руб.</div>
             <a class="purchase-btn" href="#">Купить</a>
           </article>
 
           <article class="products-item">
-            <img src="http://placehold.it/150x100" alt="Baxter moisturizer" width="150" height="100">
-            <p>
-            Увлажняющий кондиционер<br>
-            «Baxter of California»                        
-            </p>
+            <a href="#">
+              <img src="http://placehold.it/150x100" alt="Baxter moisturizer" width="150" height="100">
+              <p>
+              Увлажняющий кондиционер<br>
+              «Baxter of California»                        
+              </p>
+            </a>
             <div class="product-price">750 руб.</div>
             <a class="purchase-btn" href="#">Купить</a>
           </article>
 
           <article class="products-item">
-            <img src="http://placehold.it/150x100" alt="Suavecito hair gel" width="150" height="100">
-            <p>
-            Гель для волос<br>
-            «Suavecito»
-            </p>
+            <a href="#">
+              <img src="http://placehold.it/150x100" alt="Suavecito hair gel" width="150" height="100">
+              <p>
+              Гель для волос<br>
+              «Suavecito»
+              </p>
+            </a>
             <div class="product-price">290 руб.</div>
             <a class="purchase-btn" href="#">Купить</a>
           </article>
 
           <article class="products-item">
-            <img src="http://placehold.it/150x100" alt="American Crew clay pomade" width="150" height="100">
-            <p>
-            Глина для укладки волос<br>
-            «American Crew»
-            </p>
+            <a href="#">
+              <img src="http://placehold.it/150x100" alt="American Crew clay pomade" width="150" height="100">
+              <p>
+              Глина для укладки волос<br>
+              «American Crew»
+              </p>
+            </a>
             <div class="product-price">500 руб.</div>
             <a class="purchase-btn" href="#">Купить</a>
           </article>
 
           <article class="products-item">
-            <img src="http://placehold.it/150x100" alt="American Crew hair gel" width="150" height="100"> 
-            <p>
-            Гель для волос<br>
-            «American Crew»
-            </p>
+            <a href="#">
+              <img src="http://placehold.it/150x100" alt="American Crew hair gel" width="150" height="100"> 
+              <p>
+              Гель для волос<br>
+              «American Crew»
+              </p>
+            </a>
             <div class="product-price">300 руб.</div>
             <a class="purchase-btn" href="#">Купить</a>
           </article>
 
           <article class="products-item">
-            <img src="http://placehold.it/150x100" alt="Baxter shaving kit" width="150" height="100">
-            <p>
-            Набор для бритья<br>
-            «Baxter of California»    
-            </p>
+            <a href="#">
+              <img src="http://placehold.it/150x100" alt="Baxter shaving kit" width="150" height="100">
+              <p>
+              Набор для бритья<br>
+              «Baxter of California»    
+              </p>
+            </a>
             <div class="product-price">3 900 руб.</div>
             <a class="purchase-btn" href="#">Купить</a>
           </article>
@@ -168,7 +182,7 @@
 
         <div class="products-pages">
           <a class="pages-btn" href="#">1</a>
-          <a class="pages-btn" href="#">2</a>
+          <a class="pages-btn">2</a>
           <a class="pages-btn" href="#">3</a>
           <a class="pages-btn" href="#">4</a>
         </div>
